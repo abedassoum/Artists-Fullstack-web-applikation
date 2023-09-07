@@ -34,6 +34,7 @@ app.put("/artists/:artistId", async (req, res) => {
   artistToUpdate.name = body.name;
   artistToUpdate.birth = body.birth;
   artistToUpdate.image = body.image;
+  artistToUpdate.activeSince = body.activeSince;
   artistToUpdate.genres = body.genres;
   artistToUpdate.labels = body.labels;
   artistToUpdate.website = body.website;
@@ -88,6 +89,7 @@ app.post("/artists", async (req, res) => {
     id: newArtistId,
     name: body.name,
     birth: body.birth,
+    activeSince: body.activeSince,
     genres: body.genres,
     labels: body.labels,
     image: body.image,

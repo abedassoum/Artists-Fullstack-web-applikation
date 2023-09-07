@@ -109,8 +109,6 @@ async function createArtistClicked(event) {
     document.querySelector("#dialog-create-artist").close();
     updateArtistsGrid();
     form.reset();
-    hideErrorMessage();
-    alert("ARTIST CREATED!");
     await getArtists();
   } else {
     console.log(response.status, response.statusText);
@@ -147,7 +145,7 @@ async function updateArtistClicked(event) {
   if (response == 200) {
     document.querySelector("#dialog-update-artist").close();
     updateArtistsGrid();
-    alert("ARTIST UPDATED!");
+    // alert("ARTIST UPDATED!");
     await getArtists();
     console.log("Update Artist button clicked!");
   } else {
@@ -180,26 +178,12 @@ async function deleteArtistConfirm(artistObject) {
 
   if (response == 200) {
     updateArtistsGrid();
-    showDeleteFeedback();
-    alert("ARTIST DELETED!");
   } else {
     document.querySelector("#dialog-failed-to-update").showModal();
   }
 }
 
-function showDeleteFeedback() {
-  const dialog = document.getElementById("dialog-delete-feedback");
-  const dialogMessage = document.getElementById(
-    "dialog-delete-feedback-message"
-  );
-  dialogMessage.textContent;
-  dialog.showModal();
-  setTimeout(closeDialog, 1000);
 
-  function closeDialog() {
-    dialog.close();
-  }
-}
 
 function showCreateArtistDialog() {
   document.querySelector("#dialog-create-artist").showModal();

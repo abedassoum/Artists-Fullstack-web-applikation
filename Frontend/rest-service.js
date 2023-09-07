@@ -42,6 +42,7 @@ async function createArtist(
   });
 
   if (response.status == 200) {
+    alert("ARTIST CREATED!");
     return 200;
   } else {
     throw new Error("Failed to create artist"); // Handle the error
