@@ -1,0 +1,370 @@
+/* Set basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Lucida Handwriting, cursive;
+  line-height: 1.6;
+  /* background-color: rgba(189, 184, 184, 0.5); */
+  background-image: url(https://img.freepik.com/free-photo/headphones-african-american-woman-s-portrait-isolated-dark-studio-background-multicolored-neon-light-beautiful-female-model-concept-human-emotions-facial-expression-sales-ad-fashion_155003-34470.jpg?w=1060&t=st=1693692851~exp=1693693451~hmac=c2f7b7edaff6112a708b34c6e2b39db9cb4f37311c5854fb1bf89dfbdfa6051c);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #dde2de;
+}
+
+/* Remove margin from both html and body */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* To hide horizontal scrollbar if not needed */
+}
+
+/* Rest of your existing CSS */
+
+/* Header */
+
+header {
+  background-color: #0be088;
+  color: #f574ea;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-height: 10vh;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
+#search-error-msg {
+  background-color: #00000085;
+  text-align: center;
+}
+
+#input-search {
+  margin-top: -4rem;
+  margin-left: 15rem;
+  border-radius: 50px;
+  border-color: #b82793;
+  border-width: 10px;
+  font-size: 1.2rem;
+}
+
+#btn-create-artist {
+  margin-left: auto;
+  margin-right: auto;
+  height: 5vh;
+  background-color: #ef71f3;
+  color: rgb(248, 244, 244);
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+dialog {
+  color: #fc91f3;
+  background-color: #fbfdfc;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(230, 227, 227, 0.3);
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-item {
+    width: 30vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid-item {
+    width: 20vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .grid-item {
+    width: 15vw;
+  }
+}
+
+.error-message {
+  background-color: rgb(255, 121, 121);
+  margin: 1em auto;
+  width: 100%;
+  max-width: 342px;
+  padding: 1em;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+.hide {
+  display: none;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 2rem;
+  letter-spacing: 0.1px;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  padding: 1em;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-item {
+    width: 45vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid-item {
+    width: 30vw;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .grid-item {
+    width: 20vw;
+  }
+}
+
+/* ---------- grid item styling ---------- */
+
+.grid-item {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  padding: 1.5em;
+  position: relative;
+  height: 50vh;
+  margin: auto;
+  border-radius: 50px;
+  background-color: rgba(7, 7, 7, 0.6);
+}
+
+.grid-item:hover {
+  box-shadow: 0 8px 16px 0 black;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 10rem;
+  object-fit: contain;
+}
+
+.grid-item p {
+  margin: 0.3em 0;
+  padding: 0 0 0 0;
+}
+
+.grid-item h3:first-letter,
+.grid-item p:first-letter {
+  text-transform: uppercase;
+}
+
+/* ---------- buttons in grid container ---------- */
+
+.grid-container .btns {
+  padding: 1em 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  position: absolute;
+  bottom: 1.5em;
+  left: 1.5em;
+  right: 1.5em;
+}
+
+.grid-container .btns button {
+  width: 100%;
+}
+
+/* ---------- form styling ---------- */
+/* input form styling */
+form {
+  margin: 2em auto 0;
+  padding: 1em 1em 2em;
+  text-align: center;
+}
+
+button {
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+  border: 2px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  width: 100%;
+  max-width: 380px;
+  background-color: #d3d5cb;
+}
+
+.btn-delete,
+.btn-cancel,
+.btn-favourite {
+  background-color: rgb(241, 240, 241);
+}
+
+header button {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+input {
+  margin: 1em auto;
+  width: 60%;
+  max-width: 350px;
+  padding: 1em;
+  border: 2px solid;
+  display: block;
+}
+
+.btn-cancel {
+  margin: 0 0 1em;
+}
+
+select {
+  border: none;
+  padding: 1em;
+  margin: 1em;
+  max-width: 350px;
+}
+
+/* ---------- dialog styling ---------- */
+
+/* CSS for the dialog */
+dialog {
+  width: 50vw;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  padding: 2em 1em;
+  margin: auto;
+}
+
+/* makes app background visible while dialog is open */
+dialog::backdrop {
+  background: rgba(92, 92, 92, 0.8);
+}
+
+dialog h3 {
+  text-align: center;
+}
+
+dialog h4 {
+  margin-bottom: 0;
+}
+
+dialog ul {
+  margin: 0.5em 0 1em;
+  padding-inline-start: 1.5em;
+}
+dialog p {
+  text-align: center;
+}
+
+#artist-image {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-height: 40vh;
+}
+
+/* ---------- tools grid styling ---------- */
+
+.tools-grid {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  padding: 1.5em;
+  padding-top: 12vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  justify-content: start;
+  justify-items: stretch;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 600px) {
+  .tools-grid {
+    grid-template-columns: auto auto;
+    margin: 1em;
+  }
+}
+
+.tools-grid input {
+  width: 350px;
+  max-width: 100%;
+  display: inline;
+}
+
+.tools-grid form {
+  padding: 0;
+  margin: 0;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px; /* Adjust the size as needed */
+  height: 24px; /* Adjust the size as needed */
+  fill: rgb(153, 133, 18); /* Color of the star */
+  /* Add any other styles you want */
+}
