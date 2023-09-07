@@ -22,9 +22,9 @@ Click "Create Artist" to add a new artist.
 Click "Update" to edit artist details.
 Click "Delete" to remove an artist.
 Click "Mark as Favorite" to tag an artist as a favorite.
-Search and Filter:
+Search and Filter:Use search and filter/Sort options to find specific artists.(you need to refresh the page when you choose a favourite artists)
 
-Use search and filter/Sort options to find specific artists.
+
 
 Customization
 You can customize the API endpoint in rest-service.js if your data is from a different source.
