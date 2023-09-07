@@ -4,7 +4,7 @@ Clone the Repository:
 git clone: https://github.com/abedassoum/Artists-Fullstack-web-applikation.git
 
 
-2- Navigate to the Project Folder:
+2- Navigate to the Project Folder (in the terminal):
 cd artists-Backend
 
 3- Usage:
