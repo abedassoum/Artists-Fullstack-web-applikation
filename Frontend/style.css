@@ -277,6 +277,17 @@ input {
   margin: 0 0 1em;
 }
 
+#favourite-artist {
+  font-size: 14px; 
+  padding: 5px 10px; 
+  background-color:  #fc91f3;; 
+  color: #fff; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+
 select {
   border: none;
   padding: 1em;

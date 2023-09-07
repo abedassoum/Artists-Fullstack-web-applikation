@@ -47,6 +47,10 @@ async function initApp() {
   document
     .querySelector("#filter-bar")
     .addEventListener("change", (event) => searchByName(event));
+
+  document
+    .querySelector("#favourite-artist")
+    .addEventListener("click", goToFavourites);
 }
 
 function cancelCreate(event) {
@@ -66,7 +70,7 @@ function updateClicked(artistObject) {
   updateForm.name.value = artistObject.name;
   updateForm.image.value = artistObject.image;
   updateForm.birth.value = artistObject.birth;
-   updateForm.activeSince.value = artistObject.activeSince;
+  updateForm.activeSince.value = artistObject.activeSince;
   updateForm.genres.value = artistObject.genres;
   updateForm.labels.value = artistObject.labels;
   updateForm.website.value = artistObject.website;
@@ -183,8 +187,6 @@ async function deleteArtistConfirm(artistObject) {
   }
 }
 
-
-
 function showCreateArtistDialog() {
   document.querySelector("#dialog-create-artist").showModal();
   console.log("Create New Artist button clicked!");
@@ -195,13 +197,13 @@ async function updateArtistsGrid() {
   searchByName(artists);
 }
 
-async function markFavouriteClicked(artistObject, Event) {
+async function markFavouriteClicked(artistObject) {
   Event.preventDefault;
   const form = document.querySelector("#form-update-artist");
   const id = form.getAttribute("data-id");
 
   console.log("artistObject" + artistObject.id);
-  const response = await markFavourite(artistObject.id);
+  const response = await markFavourite(artistObject.id, Event);
   if (response == 200) {
     alert("ARTIST MARKED AS FAVOURITE!");
     await getArtists();
@@ -224,6 +226,11 @@ function showArtists(artistList) {
     `
     );
   }
+}
+
+function goToFavourites() {
+  let favouriteList = artists.filter((artist) => artist.isFavorite == true);
+  showArtists(favouriteList);
 }
 
 function createStarSVG() {
@@ -291,7 +298,8 @@ function showArtistModal(artistObject) {
   modal.querySelector("#artist-image").src = artistObject.image;
   modal.querySelector("#artist-name").textContent = artistObject.name;
   modal.querySelector("#artist-birth").textContent = artistObject.birth;
-  modal.querySelector("#artist-active-since").textContent = artistObject.activeSince;
+  modal.querySelector("#artist-active-since").textContent =
+    artistObject.activeSince;
   modal.querySelector("#artist-genres").textContent = artistObject.genres;
   modal.querySelector("#artist-labels").textContent = artistObject.labels;
   modal.querySelector("#artist-website").textContent = artistObject.website;

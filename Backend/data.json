@@ -1,1 +1,162 @@
-[{"id":1,"name":"Adele","birth":"1988-05-05","activeSince":"2006","genres":"XL Recordings,Columbia Records","labels":"https://www.adele.com/","website":"British singer known for her powerful vocals.","image":"https://cdn.britannica.com/98/163898-050-B2E2A704/British-sensation-Adele.jpg","shortDescription":"Singer-songwriter and musician with chart-topping hits."},{"id":2,"name":"Ed Sheeran","birth":"1991-02-17","activeSince":"2004","genres":["Pop","Folk"],"labels":["Atlantic Records","Warner Music"],"website":"https://www.edsheeran.com/","image":"https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSuDiEceWUCtPkz3HqZXolNEmRWUvzyGVZjuP3h0pokaaTJ2ize4Dvb_Imro2nG6C6pgyso99B_Vsiiwt4","shortDescription":"Singer-songwriter and musician with chart-topping hits."},{"id":3,"name":"Beyoncé","birth":"1981-09-04","activeSince":"1997","genres":["R&B","Pop"],"labels":["Columbia Records","Parkwood Entertainment"],"website":"https://www.beyonce.com/","image":"https://images.hellomagazine.com/horizon/square/8e5fc04a95f7-beyonce-renaissance-tour.jpg","shortDescription":"Iconic singer, actress, and performer."},{"id":4,"name":"Kendrick Lamar","birth":"1987-06-17","activeSince":"2003","genres":["Hip-Hop","Rap"],"labels":["Top Dawg Entertainment","Interscope Records"],"website":"https://www.kendricklamar.com/","image":"https://upload.wikimedia.org/wikipedia/commons/3/32/Pulitzer2018-portraits-kendrick-lamar.jpg","shortDescription":"Grammy-winning rapper and lyricist."},{"id":5,"name":"Taylor Swift","birth":"1989-12-13","activeSince":"2006","genres":["Pop","Country"],"labels":["Republic Records","Big Machine Records"],"website":"https://www.taylorswift.com/","image":"https://m.media-amazon.com/images/M/MV5BZGM0YjhkZmEtNGYxYy00OTk0LThlNDgtNGQzM2YwNjU0NDQzXkEyXkFqcGdeQXVyMTU3ODQxNDYz._V1_.jpg","shortDescription":"Versatile artist known for her storytelling songs."},{"id":6,"name":"Drake","birth":"1986-10-24","activeSince":"2001","genres":["Hip-Hop","R&B"],"labels":["OVO Sound","Republic Records"],"website":"https://www.drakeofficial.com/","image":"https://hips.hearstapps.com/hmg-prod/images/drake_photo_by_prince_williams_wireimage_getty_479503454.jpg","shortDescription":"Canadian rapper and global music sensation."},{"id":7,"name":"Billie Eilish","birth":"2001-12-18","activeSince":"2015","genres":"Pop,Electropop","labels":"Darkroom,Interscope Records","website":"https://www.billieeilish.com/","image":"https://media.allure.com/photos/605247e1bddfa641546fa160/1:1/w_2264,h_2264,c_limit/billie%20eilish.jpg","shortDescription":"Young and innovative pop sensation.","isFavorite":true},{"id":8,"name":"Elton John","birth":"1947-03-25","activeSince":"1962","genres":["Rock","Pop"],"labels":["Rocket Records","Universal Music Group"],"website":"https://www.eltonjohn.com/","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Elton_John_2011_Shankbone_2.JPG/1200px-Elton_John_2011_Shankbone_2.JPG","shortDescription":"Legendary singer-songwriter and pianist."},{"id":9,"name":"Rihanna","birth":"1988-02-20","activeSince":"2005","genres":["Pop","R&B"],"labels":["Roc Nation","Def Jam Recordings"],"website":"https://www.rihannanow.com/","image":"https://cdn.britannica.com/83/211883-050-46933F1A/Rihanna-Barbadian-singer-Robyn-Fenty.jpg","shortDescription":"Global superstar and fashion icon."},{"id":10,"name":"Justin Bieber","birth":"1994-03-01","activeSince":"2007","genres":["Pop","R&B"],"labels":["Def Jam Recordings","Island Records"],"website":"https://www.justinbiebermusic.com/","image":"https://hips.hearstapps.com/hmg-prod/images/justin-bieber-gettyimages-1202421980.jpg?crop=1xw:1.0xh;center,top&resize=1200:*","shortDescription":"Canadian pop sensation with a dedicated fan base."}]
+[
+  {
+    "id": 1,
+    "name": "Adele",
+    "birth": "1988-05-05",
+    "activeSince": "2006",
+    "genres": "XL Recordings,Columbia Records",
+    "labels": "https://www.adele.com/",
+    "website": "British singer known for her powerful vocals.",
+    "image": "https://cdn.britannica.com/98/163898-050-B2E2A704/British-sensation-Adele.jpg",
+    "shortDescription": "Singer-songwriter and musician with chart-topping hits."
+  },
+  {
+    "id": 2,
+    "name": "Ed Sheeran",
+    "birth": "1991-02-17",
+    "activeSince": "2004",
+    "genres": [
+      "Pop",
+      "Folk"
+    ],
+    "labels": [
+      "Atlantic Records",
+      "Warner Music"
+    ],
+    "website": "https://www.edsheeran.com/",
+    "image": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSuDiEceWUCtPkz3HqZXolNEmRWUvzyGVZjuP3h0pokaaTJ2ize4Dvb_Imro2nG6C6pgyso99B_Vsiiwt4",
+    "shortDescription": "Singer-songwriter and musician with chart-topping hits."
+  },
+  {
+    "id": 3,
+    "name": "Beyoncé",
+    "birth": "1981-09-04",
+    "activeSince": "1997",
+    "genres": [
+      "R&B",
+      "Pop"
+    ],
+    "labels": [
+      "Columbia Records",
+      "Parkwood Entertainment"
+    ],
+    "website": "https://www.beyonce.com/",
+    "image": "https://images.hellomagazine.com/horizon/square/8e5fc04a95f7-beyonce-renaissance-tour.jpg",
+    "shortDescription": "Iconic singer, actress, and performer.",
+    "isFavorite": true
+  },
+  {
+    "id": 4,
+    "name": "Kendrick Lamar",
+    "birth": "1987-06-17",
+    "activeSince": "2003",
+    "genres": [
+      "Hip-Hop",
+      "Rap"
+    ],
+    "labels": [
+      "Top Dawg Entertainment",
+      "Interscope Records"
+    ],
+    "website": "https://www.kendricklamar.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Pulitzer2018-portraits-kendrick-lamar.jpg",
+    "shortDescription": "Grammy-winning rapper and lyricist."
+  },
+  {
+    "id": 5,
+    "name": "Taylor Swift",
+    "birth": "1989-12-13",
+    "activeSince": "2006",
+    "genres": [
+      "Pop",
+      "Country"
+    ],
+    "labels": [
+      "Republic Records",
+      "Big Machine Records"
+    ],
+    "website": "https://www.taylorswift.com/",
+    "image": "https://m.media-amazon.com/images/M/MV5BZGM0YjhkZmEtNGYxYy00OTk0LThlNDgtNGQzM2YwNjU0NDQzXkEyXkFqcGdeQXVyMTU3ODQxNDYz._V1_.jpg",
+    "shortDescription": "Versatile artist known for her storytelling songs."
+  },
+  {
+    "id": 6,
+    "name": "Drake",
+    "birth": "1986-10-24",
+    "activeSince": "2001",
+    "genres": [
+      "Hip-Hop",
+      "R&B"
+    ],
+    "labels": [
+      "OVO Sound",
+      "Republic Records"
+    ],
+    "website": "https://www.drakeofficial.com/",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/drake_photo_by_prince_williams_wireimage_getty_479503454.jpg",
+    "shortDescription": "Canadian rapper and global music sensation."
+  },
+  {
+    "id": 7,
+    "name": "Billie Eilish",
+    "birth": "2001-12-18",
+    "activeSince": "2015",
+    "genres": "Pop,Electropop",
+    "labels": "Darkroom,Interscope Records",
+    "website": "https://www.billieeilish.com/",
+    "image": "https://media.allure.com/photos/605247e1bddfa641546fa160/1:1/w_2264,h_2264,c_limit/billie%20eilish.jpg",
+    "shortDescription": "Young and innovative pop sensation.",
+    "isFavorite": true
+  },
+  {
+    "id": 8,
+    "name": "Elton John",
+    "birth": "1947-03-25",
+    "activeSince": "1962",
+    "genres": [
+      "Rock",
+      "Pop"
+    ],
+    "labels": [
+      "Rocket Records",
+      "Universal Music Group"
+    ],
+    "website": "https://www.eltonjohn.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Elton_John_2011_Shankbone_2.JPG/1200px-Elton_John_2011_Shankbone_2.JPG",
+    "shortDescription": "Legendary singer-songwriter and pianist."
+  },
+  {
+    "id": 9,
+    "name": "Rihanna",
+    "birth": "1988-02-20",
+    "activeSince": "2005",
+    "genres": [
+      "Pop",
+      "R&B"
+    ],
+    "labels": [
+      "Roc Nation",
+      "Def Jam Recordings"
+    ],
+    "website": "https://www.rihannanow.com/",
+    "image": "https://cdn.britannica.com/83/211883-050-46933F1A/Rihanna-Barbadian-singer-Robyn-Fenty.jpg",
+    "shortDescription": "Global superstar and fashion icon."
+  },
+  {
+    "id": 10,
+    "name": "Justin Bieber",
+    "birth": "1994-03-01",
+    "activeSince": "2007",
+    "genres": [
+      "Pop",
+      "R&B"
+    ],
+    "labels": [
+      "Def Jam Recordings",
+      "Island Records"
+    ],
+    "website": "https://www.justinbiebermusic.com/",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/justin-bieber-gettyimages-1202421980.jpg?crop=1xw:1.0xh;center,top&resize=1200:*",
+    "shortDescription": "Canadian pop sensation with a dedicated fan base."
+  }
+]
