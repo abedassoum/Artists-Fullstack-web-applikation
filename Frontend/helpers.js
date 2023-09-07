@@ -50,19 +50,11 @@ function sortArtists(artistsArr) {
 
 function sortByOption(sortValue) {
   if (sortValue === "name") {
-    return artistList.sort((a, b) => {
+    return artists.sort((a, b) => {
       if (a.name && b.name) {
         return a.name.localeCompare(b.name);
       }
       // Handle the case where either a.name or b.name is undefined
-      return 0; // You can return 0 or any other value based on your preference
-    });
-  } else if (sortValue === "knownSong") {
-    return artistList.sort((a, b) => {
-      if (a.knownSong && b.knownSong) {
-        return a.knownSong.localeCompare(b.knownSong);
-      }
-      // Handle the case where either a.knownSong or b.knownSong is undefined
       return 0; // You can return 0 or any other value based on your preference
     });
   }
