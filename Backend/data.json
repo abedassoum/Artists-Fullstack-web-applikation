@@ -64,17 +64,11 @@
   },
   {
     "id": 5,
-    "name": "Taylor Swift",
+    "name": "Taylor swift",
     "birth": "1989-12-13",
     "activeSince": "2006",
-    "genres": [
-      "Pop",
-      "Country"
-    ],
-    "labels": [
-      "Republic Records",
-      "Big Machine Records"
-    ],
+    "genres": "Pop,Country",
+    "labels": "Republic Records,Big Machine Records",
     "website": "https://www.taylorswift.com/",
     "image": "https://m.media-amazon.com/images/M/MV5BZGM0YjhkZmEtNGYxYy00OTk0LThlNDgtNGQzM2YwNjU0NDQzXkEyXkFqcGdeQXVyMTU3ODQxNDYz._V1_.jpg",
     "shortDescription": "Versatile artist known for her storytelling songs."
