@@ -1,22 +1,20 @@
-Installation
+1- Installation
 Clone the Repository:
 
+git clone: https://github.com/abedassoum/Artists-Fullstack-web-applikation.git
 
 
-git clone https://github.com/your-username/artist-management-app.git
-
-
-Navigate to the Project Folder:
+2- Navigate to the Project Folder:
 cd artists-Backend
 
-Usage:
+3- Usage:
 
 Start the App in terminal:
-npm start
+node app.js
 
 Access the App:
-
 Open your web browser and go to http://localhost:3000.
+open the live server
 
 Manage Artists:
 
@@ -26,7 +24,7 @@ Click "Delete" to remove an artist.
 Click "Mark as Favorite" to tag an artist as a favorite.
 Search and Filter:
 
-Use search and filter options to find specific artists.
+Use search and filter/Sort options to find specific artists.
 
 Customization
 You can customize the API endpoint in rest-service.js if your data is from a different source.
